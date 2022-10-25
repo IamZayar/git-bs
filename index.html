@@ -5,8 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BS-Test</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/js/all.min.js">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .card{
+            width: 300px;
+            height: 370px;
+        }
+        img{
+            width: 300px;
+            height: 250px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar bg-dark border border-3 border-success">
+                <div class="container-fluid">
+                  <a href="" class="text-success text-decoration-none fs-1">My Movies</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    <!-- Movies -->
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <div class="card col-2 m-3 border border-3 border-success">
+                    <img src="./photos/Project Wolf Hunting.jpg"  alt="..." style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title">Project Wolf Hunting</h5>
+                      <a href="#" class="btn btn-outline-dark">Download</a>
+                    </div>
+                </div>
+
+                <div class="card col-2 m-3 border border-3 border-success">
+                    <img src="./photos/bros.jpg"  alt="..." style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title">Bros</h5>
+                      <a href="#" class="btn btn-outline-dark">Download</a>
+                    </div>
+                </div>
+
+                <div class="card col-2 m-3 border border-3 border-success">
+                    <img src="./photos/Mutant Tiger.jpg"  alt="..." style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title">Mutant Tiger</h5>
+                      <a href="#" class="btn btn-outline-dark">Download</a>
+                    </div>
+                </div>
+
+                <div class="card col-2 m-3 border border-3 border-success">
+                    <img src="./photos/Don't Worry Darling.jpg"  alt="..." style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title">Don't Worry Darling</h5>
+                      <a href="#" class="btn btn-outline-dark">Download</a>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link text-success" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link text-success" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="col-12">
+                <ul class="list-group m-3 border border-3 border-success">
+                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none">Action</a></li>
+                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none">Adventure</a></li>
+                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none">Animation</a></li>
+                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none">Biography</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
